@@ -1,0 +1,79 @@
+.cal a{
+    text-decoration: none;
+}
+/*-------
+calendar
+-------*/
+.calendar_sec{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00a7ea78;
+}
+
+.calendar_box{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0px 10px 12px 1px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin: 20px auto 50px auto;
+    padding: 15px 20px 40px 20px;
+}
+table.cal {
+    border-spacing: 0;
+    border-collapse: collapse;
+    color: #0086bc;
+    width: 100%;	
+}
+.cal .day_week{
+    background-color: #00a7ea78;
+}
+.cal th {
+    text-align: center;
+    padding: 1px 0 1px 6px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.cal td{
+    text-align: center;
+    padding: 6px 0 30px 6px;
+    font-size: 14px;
+}
+.cal .center{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.cal tr:not(:nth-child(1)){
+	border-bottom: 1px solid #aaa;
+}
+.sun {
+    color: #cf4646;
+}
+.day_week .sun{
+    background-color: #cf7777;
+    color: #fff;
+}
+.sat {
+    color: #4646cc;
+}
+.day_week .sat{
+    background-color: #8686d1;
+    color: #fff;
+}
+
+
+/*----------
+reservation
+----------*/
+.reserve_sec{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

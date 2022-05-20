@@ -97,22 +97,52 @@
 </section>
 
 <section class="reserve_sec">
-	<div>
-		<form action="calendar_create.php" method="POST">
+	<div class="reserve_space">
+		<form class="h-adr" action="calendar_create.php" method="POST">
 			<h1 id="reserve">Reserve</h1>
-			<p>ご予約</p>
+			<p class="subtitle">ご予約</p>
 			<div>
-				<div>get_date：<input type="text" name="get_date" class="date_input"></div>
-				<div>name: <input type="text" name="name"></div>
-				<div>email: <input type="email" name="email"></div>
-				<div>comment: <textarea name="comment"></textarea></div>
+				<div class="re_form normal_input">
+					<p><label for="date">ご希望日</label></p>
+					<input type="text" id="date" name="get_date" class="date_input">
+				</div>
+				<div class="re_form normal_input">
+					<p><label for="namae">お名前</label></p>
+					<input type="text" id="namae" name="name">
+				</div>
+				<div class="re_form normal_input">
+					<p><label for="mail">メールアドレス</label></p>
+					<input type="email" id="mail" name="email" placeholder="sample@gmail.com">
+				</div>
+				<div class="re_form">
+						<p><label for="address">ご住所</label></p>
+						<span class="p-country-name" style="display:none;">Japan</span>
+						<div class="zip">
+							〒 <input type="text" id ="address" class="p-postal-code" size="3" maxlength="3"> -
+							<input type="text" class="p-postal-code" size="4" maxlength="4">
+						</div>
+						<div class="normal_input add_form">
+							<input type="text" class="p-region" placeholder="県" readonly />
+							<input type="text" class="p-locality" placeholder="市区町村" readonly />
+							<input type="text" class="p-street-address" placeholder="番地"/>
+							<input type="text" class="p-extended-address" placeholder="建物名"/>
+						</div>
+				</div>
+				<div class="re_form">
+					<p><label for="content">相談内容</label></p>
+					<textarea id="content" class="commentarea" name="comment"></textarea>
+				</div>
 			</div>
-			<button>送信</button>
-			<a href="calendar_read.php">一覧画面</a>
+			<button class="send_btn">送信</button>
+			<div class="send_btn send_flex">
+				<div>
+					<a href="calendar_read.php">一覧画面</a>
+				</div>
+			</div>
 		</form>
 	</div>
 </section>
-
+<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script>
 

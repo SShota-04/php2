@@ -144,7 +144,7 @@ input:-moz-placeholder {
 }
 
 .zip input{
-    width: 50px;
+    width: 70px;
     height: 30px;
     padding: 4px;
     border: 1px solid #5a5a5a;
@@ -215,4 +215,38 @@ input:-moz-placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/*----------
+calendar_read
+----------*/
+fieldset{
+    border: none;
+    width: 90%;
+    margin: 30px auto;
+}
+legend{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.list_reserve a{
+    text-decoration: none;
+    width: 100px;
+    height: 35px;
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 5px 5px 5px 15px;
+    background-color: #74c2e1;
+    border: 1px solid #74c2e1;
+    border-radius: 10px;
+    color: #fff;
+}
+.list_reserve table{
+    margin: 0 auto;
+}
+.list_reserve tr th{
+    width: 25%;
+    color: #5a5a5a;
 }

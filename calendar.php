@@ -118,14 +118,14 @@
 						<p><label for="address">ご住所</label></p>
 						<span class="p-country-name" style="display:none;">Japan</span>
 						<div class="zip">
-							〒 <input type="text" id ="address" class="p-postal-code" size="3" maxlength="3"> -
-							<input type="text" class="p-postal-code" size="4" maxlength="4">
+							〒 <input type="text" id ="address" class="p-postal-code" name="zip1" size="3" maxlength="3"> -
+							<input type="text" class="p-postal-code" name="zip2" size="4" maxlength="4">
 						</div>
 						<div class="normal_input add_form">
-							<input type="text" class="p-region" placeholder="県" readonly />
-							<input type="text" class="p-locality" placeholder="市区町村" readonly />
-							<input type="text" class="p-street-address" placeholder="番地"/>
-							<input type="text" class="p-extended-address" placeholder="建物名"/>
+							<input type="text" class="p-region" name="ken" placeholder="県" readonly />
+							<input type="text" class="p-locality" name="sityouson" placeholder="市区町村" readonly />
+							<input type="text" class="p-street-address" name="banti" placeholder="番地"/>
+							<input type="text" class="p-extended-address" name="building" placeholder="建物名"/>
 						</div>
 				</div>
 				<div class="re_form">

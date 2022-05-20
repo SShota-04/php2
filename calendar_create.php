@@ -7,10 +7,16 @@
 $getdate = $_POST["get_date"];
 $name = $_POST["name"];
 $email = $_POST["email"];
+$zip1 = $_POST["zip1"];
+$zip2 = $_POST["zip2"];
+$address1 = $_POST["ken"];
+$address2 = $_POST["sityouson"];
+$address3 = $_POST["banti"];
+$address4 = $_POST["building"];
 $comment = $_POST["comment"];
 
 //データ１件を１行にまとめる（最後に改行を入れる）
-$write_data = "{$getdate} {$name} {$email} {$comment} \n";
+$write_data = "{$getdate} {$name} {$email} {$zip1}-{$zip2} {$address1}{$address2}{$address3}{$address4} {$comment} \n";
 
 //ファイルが開く、引数が'a'である部分に注目
 $file = fopen('reserve_data/data.csv', 'a');
